@@ -6,7 +6,7 @@ import sys
 import time
 from sqlalchemy import create_engine
 
-pro = ts.pro_api(token='420640ebd106e2cb753a775af0645ee306a8d871571b0565889f74d6')
+pro = ts.pro_api(token='？？？')
 
 def get_all_stock_info():
     data = pro.query('stock_basic', exchange='', list_status='L', fields='ts_code,symbol,name,area,industry,list_date')
@@ -20,14 +20,14 @@ def get_stock_daily_detail(ts_code, start_date='20180701', end_date='20211121'):
 def read_mysql_and_insert(df, name, read=False):
     # pymysql for df read_sql
     try:
-        conn = pymysql.connect(host='127.0.0.1', user='root', password='123456qqq', db='stock', charset='utf8')
+        conn = pymysql.connect(host='127.0.0.1', user='root', password='？？？', db='stock', charset='utf8')
     except pymysql.err.OperationalError as e:
         print('Error is ' + str(e))
         sys.exit()
 
     # sqlalchemy for df to_sql
     try:
-        engine = create_engine('mysql+pymysql://root:123456qqq@127.0.0.1:3306/stock')
+        engine = create_engine('mysql+pymysql://root:？？？@127.0.0.1:3306/stock')
     except sqlalchemy.exc.OperationalError as e:
         print('Error is ' + str(e))
         sys.exit()

@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 from getdata import read_mysql_and_insert
 from datetime import date,timedelta,datetime
 
-pro = ts.pro_api(token='420640ebd106e2cb753a775af0645ee306a8d871571b0565889f74d6')
+pro = ts.pro_api(token='？？？')
 
 def strategy():
     """

@@ -40,7 +40,7 @@ class SmallShort(object):
             pk.dump(self.stock_dict, sd)
 
     def before_trading(self):
-        pro = ts.pro_api(token='420640ebd106e2cb753a775af0645ee306a8d871571b0565889f74d6')
+        pro = ts.pro_api(token='？？？')
 
         for each_code in self.code_list[:]:
             ts_code = each_code.replace('XSHG', 'SH')
